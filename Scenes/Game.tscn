@@ -1,15 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Passenger.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Player.cs" type="Script" id=4]
+[ext_resource path="res://Assets/Chair.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Bus.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/Bus.cs" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 463.5, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 55 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 463.5, 25 )
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 35.0
+
 [sub_resource type="CircleShape2D" id=2]
 radius = 24.0208
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 30, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 30, 5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 5, 33.283 )
 
 [node name="Game" type="Node2D"]
 
@@ -212,18 +236,466 @@ texture = ExtResource( 2 )
 position = Vector2( 750, 130.5 )
 shape = SubResource( 1 )
 
+[node name="Bus" type="RigidBody2D" parent="."]
+position = Vector2( 38, 227 )
+mode = 2
+mass = 500.0
+gravity_scale = 5.0
+can_sleep = false
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bus" type="Sprite" parent="Bus"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 463.5, 10 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 10, 75 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 917, 75 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 463.5, 155 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 138, 189 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 790, 190 )
+shape = SubResource( 9 )
+
 [node name="Player" type="RigidBody2D" parent="."]
-position = Vector2( 440, 191 )
+position = Vector2( 442, 276 )
 can_sleep = false
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+smoothing_enabled = true
+
 [node name="Passenger" type="Sprite" parent="Player"]
 texture = ExtResource( 3 )
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Chair" type="RigidBody2D" parent="."]
+position = Vector2( 421, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair2" type="RigidBody2D" parent="."]
+position = Vector2( 336, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair2"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair2"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair2"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair2"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair3" type="RigidBody2D" parent="."]
+position = Vector2( 257, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair3"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair3"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair3"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair3"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair4" type="RigidBody2D" parent="."]
+position = Vector2( 167, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair4"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair4"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair4"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair4"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair5" type="RigidBody2D" parent="."]
+position = Vector2( 83, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair5"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair5"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair5"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair5"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair6" type="RigidBody2D" parent="."]
+position = Vector2( 505, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair6"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair6"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair6"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair6"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair7" type="RigidBody2D" parent="."]
+position = Vector2( 590, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair7"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair7"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair7"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair7"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair8" type="RigidBody2D" parent="."]
+position = Vector2( 675, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair8"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair8"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair8"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair8"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair9" type="RigidBody2D" parent="."]
+position = Vector2( 759, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair9"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair9"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair9"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair9"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Chair10" type="RigidBody2D" parent="."]
+position = Vector2( 844, 268 )
+mode = 2
+mass = 50.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chair10"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair10"]
+position = Vector2( 46, 78 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair10"]
+position = Vector2( 46, 63 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair10"]
+position = Vector2( 12.5556, 33.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Passenger" type="RigidBody2D" parent="."]
+position = Vector2( 357, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger2" type="RigidBody2D" parent="."]
+position = Vector2( 277, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger2"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger2"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger3" type="RigidBody2D" parent="."]
+position = Vector2( 188, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger3"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger3"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger4" type="RigidBody2D" parent="."]
+position = Vector2( 103, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger4"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger4"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger5" type="RigidBody2D" parent="."]
+position = Vector2( 526, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger5"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger5"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger6" type="RigidBody2D" parent="."]
+position = Vector2( 611, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger6"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger6"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger7" type="RigidBody2D" parent="."]
+position = Vector2( 695, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger7"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger7"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger8" type="RigidBody2D" parent="."]
+position = Vector2( 780, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger8"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger8"]
+position = Vector2( 25, 25 )
+shape = SubResource( 2 )
+
+[node name="Passenger9" type="RigidBody2D" parent="."]
+position = Vector2( 864, 276 )
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passenger" type="Sprite" parent="Passenger9"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger9"]
 position = Vector2( 25, 25 )
 shape = SubResource( 2 )
