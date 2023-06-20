@@ -1,10 +1,9 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Passenger.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Player.cs" type="Script" id=4]
-[ext_resource path="res://Assets/Chair.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Bus.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Bus.cs" type="Script" id=7]
 
@@ -23,9 +22,6 @@ extents = Vector2( 463.5, 25 )
 [sub_resource type="CircleShape2D" id=9]
 radius = 35.0
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 24.0208
-
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 30, 10 )
 
@@ -34,6 +30,9 @@ extents = Vector2( 30, 5 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 5, 33.283 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 24.0208
 
 [node name="Game" type="Node2D"]
 
@@ -275,6 +274,146 @@ shape = SubResource( 9 )
 position = Vector2( 790, 190 )
 shape = SubResource( 9 )
 
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 429, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 429, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 395.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 344, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 344, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 310.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 265, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 265, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 231.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 175, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 175, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 141.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 91, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 91, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 57.5556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 513, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 513, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 479.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 598, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 598, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 564.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 683, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 683, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 649.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 767, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 767, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 733.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 852, 119 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 852, 104 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Bus"]
+position = Vector2( 818.556, 74.3415 )
+rotation = -0.261799
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
 [node name="Player" type="RigidBody2D" parent="."]
 position = Vector2( 442, 276 )
 can_sleep = false
@@ -294,276 +433,6 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 25, 25 )
 shape = SubResource( 2 )
-
-[node name="Chair" type="RigidBody2D" parent="."]
-position = Vector2( 421, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair2" type="RigidBody2D" parent="."]
-position = Vector2( 336, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair2"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair2"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair2"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair2"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair3" type="RigidBody2D" parent="."]
-position = Vector2( 257, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair3"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair3"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair3"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair3"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair4" type="RigidBody2D" parent="."]
-position = Vector2( 167, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair4"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair4"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair4"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair4"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair5" type="RigidBody2D" parent="."]
-position = Vector2( 83, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair5"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair5"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair5"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair5"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair6" type="RigidBody2D" parent="."]
-position = Vector2( 505, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair6"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair6"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair6"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair6"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair7" type="RigidBody2D" parent="."]
-position = Vector2( 590, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair7"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair7"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair7"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair7"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair8" type="RigidBody2D" parent="."]
-position = Vector2( 675, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair8"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair8"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair8"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair8"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair9" type="RigidBody2D" parent="."]
-position = Vector2( 759, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair9"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair9"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair9"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair9"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
-
-[node name="Chair10" type="RigidBody2D" parent="."]
-position = Vector2( 844, 268 )
-mode = 2
-mass = 50.0
-can_sleep = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Chair10"]
-texture = ExtResource( 5 )
-centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Chair10"]
-position = Vector2( 46, 78 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chair10"]
-position = Vector2( 46, 63 )
-shape = SubResource( 4 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Chair10"]
-position = Vector2( 12.5556, 33.3415 )
-rotation = -0.261799
-scale = Vector2( 1, 1 )
-shape = SubResource( 5 )
 
 [node name="Passenger" type="RigidBody2D" parent="."]
 position = Vector2( 357, 276 )
