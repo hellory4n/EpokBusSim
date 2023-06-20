@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Bus.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Bus.cs" type="Script" id=7]
 [ext_resource path="res://Assets/Sky.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Forest.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
@@ -2052,6 +2053,11 @@ centered = false
 [node name="City4" type="Sprite" parent="."]
 position = Vector2( 4191, 45 )
 texture = ExtResource( 5 )
+centered = false
+
+[node name="Forest" type="Sprite" parent="."]
+position = Vector2( 5613, 247 )
+texture = ExtResource( 9 )
 centered = false
 
 [node name="Bus" type="RigidBody2D" parent="."]
