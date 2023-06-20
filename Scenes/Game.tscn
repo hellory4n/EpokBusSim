@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/Sky.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Forest.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Wheel.cs" type="Script" id=10]
+[ext_resource path="res://Assets/242740__marlonhj__engine.wav" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
@@ -2402,3 +2403,7 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Passenger9"]
 position = Vector2( 25, 25 )
 shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
