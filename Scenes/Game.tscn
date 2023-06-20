@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Assets/Forest.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Wheel.cs" type="Script" id=10]
 [ext_resource path="res://Assets/242740__marlonhj__engine.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/bos.mp3" type="AudioStream" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
@@ -2037,6 +2038,205 @@ texture = ExtResource( 2 )
 position = Vector2( 750, 130.5 )
 shape = SubResource( 1 )
 
+[node name="Ground11" type="RigidBody2D" parent="."]
+position = Vector2( 11700, 467 )
+mode = 1
+mass = 8.95986e+07
+gravity_scale = 0.0
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Grass" type="Sprite" parent="Ground11"]
+position = Vector2( -28, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass2" type="Sprite" parent="Ground11"]
+position = Vector2( -28, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass3" type="Sprite" parent="Ground11"]
+position = Vector2( -28, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass4" type="Sprite" parent="Ground11"]
+position = Vector2( 122, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass5" type="Sprite" parent="Ground11"]
+position = Vector2( 122, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass6" type="Sprite" parent="Ground11"]
+position = Vector2( 122, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass7" type="Sprite" parent="Ground11"]
+position = Vector2( 272, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass8" type="Sprite" parent="Ground11"]
+position = Vector2( 272, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass9" type="Sprite" parent="Ground11"]
+position = Vector2( 272, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass10" type="Sprite" parent="Ground11"]
+position = Vector2( 422, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass11" type="Sprite" parent="Ground11"]
+position = Vector2( 422, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass12" type="Sprite" parent="Ground11"]
+position = Vector2( 422, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass13" type="Sprite" parent="Ground11"]
+position = Vector2( 572, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass14" type="Sprite" parent="Ground11"]
+position = Vector2( 572, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass15" type="Sprite" parent="Ground11"]
+position = Vector2( 572, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass16" type="Sprite" parent="Ground11"]
+position = Vector2( 722, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass17" type="Sprite" parent="Ground11"]
+position = Vector2( 722, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass18" type="Sprite" parent="Ground11"]
+position = Vector2( 722, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass19" type="Sprite" parent="Ground11"]
+position = Vector2( 872, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass20" type="Sprite" parent="Ground11"]
+position = Vector2( 872, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass21" type="Sprite" parent="Ground11"]
+position = Vector2( 872, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass22" type="Sprite" parent="Ground11"]
+position = Vector2( 1022, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass23" type="Sprite" parent="Ground11"]
+position = Vector2( 1022, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass24" type="Sprite" parent="Ground11"]
+position = Vector2( 1022, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass25" type="Sprite" parent="Ground11"]
+position = Vector2( 1172, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass26" type="Sprite" parent="Ground11"]
+position = Vector2( 1172, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass27" type="Sprite" parent="Ground11"]
+position = Vector2( 1172, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Grass28" type="Sprite" parent="Ground11"]
+position = Vector2( 1322, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 28, 0 )
+
+[node name="Grass29" type="Sprite" parent="Ground11"]
+position = Vector2( 1322, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 78, 0 )
+
+[node name="Grass30" type="Sprite" parent="Ground11"]
+position = Vector2( 1322, 1 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 128, 0 )
+
+[node name="Soil" type="Sprite" parent="Ground11"]
+position = Vector2( 750, 155 )
+scale = Vector2( 30, 4.2 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground11"]
+position = Vector2( 750, 130.5 )
+shape = SubResource( 1 )
+
 [node name="City" type="Sprite" parent="."]
 position = Vector2( 0, 45 )
 texture = ExtResource( 5 )
@@ -2059,6 +2259,11 @@ centered = false
 
 [node name="City4" type="Sprite" parent="."]
 position = Vector2( 4191, 45 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="City6" type="Sprite" parent="."]
+position = Vector2( 2.88e+07, 45 )
 texture = ExtResource( 5 )
 centered = false
 
@@ -2406,4 +2611,9 @@ shape = SubResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+volume_db = -9.455
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 autoplay = true
