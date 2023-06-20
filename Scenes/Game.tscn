@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/Bus.cs" type="Script" id=7]
 [ext_resource path="res://Assets/Sky.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Forest.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Wheel.cs" type="Script" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
@@ -2040,6 +2041,11 @@ position = Vector2( 0, 45 )
 texture = ExtResource( 5 )
 centered = false
 
+[node name="City5" type="Sprite" parent="."]
+position = Vector2( -1397, 45 )
+texture = ExtResource( 5 )
+centered = false
+
 [node name="City2" type="Sprite" parent="."]
 position = Vector2( 1397, 45 )
 texture = ExtResource( 5 )
@@ -2064,7 +2070,7 @@ centered = false
 position = Vector2( 38, 240 )
 mode = 2
 mass = 500.0
-gravity_scale = 5.0
+gravity_scale = 128.0
 can_sleep = false
 script = ExtResource( 7 )
 __meta__ = {
@@ -2094,10 +2100,12 @@ shape = SubResource( 8 )
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 138, 189 )
 shape = SubResource( 9 )
+script = ExtResource( 10 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 790, 190 )
 shape = SubResource( 9 )
+script = ExtResource( 10 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 429, 119 )
@@ -2248,6 +2256,7 @@ __meta__ = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 100, 0 )
 current = true
 smoothing_enabled = true
 
