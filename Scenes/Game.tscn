@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Grass.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Soil.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Scripts/Wheel.cs" type="Script" id=10]
 [ext_resource path="res://Assets/242740__marlonhj__engine.wav" type="AudioStream" id=11]
 [ext_resource path="res://Assets/bos.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Scripts/ProceduralContentLol.cs" type="Script" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 750, 129.5 )
@@ -2274,6 +2275,7 @@ centered = false
 
 [node name="Bus" type="RigidBody2D" parent="."]
 position = Vector2( 38, 240 )
+z_index = 1
 mode = 2
 mass = 500.0
 gravity_scale = 128.0
@@ -2445,6 +2447,7 @@ shape = SubResource( 5 )
 
 [node name="Player" type="RigidBody2D" parent="."]
 position = Vector2( 442, 276 )
+z_index = 1
 can_sleep = false
 script = ExtResource( 4 )
 __meta__ = {
@@ -2466,6 +2469,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger" type="RigidBody2D" parent="."]
 position = Vector2( 357, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2481,6 +2485,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger2" type="RigidBody2D" parent="."]
 position = Vector2( 277, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2496,6 +2501,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger3" type="RigidBody2D" parent="."]
 position = Vector2( 188, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2511,6 +2517,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger4" type="RigidBody2D" parent="."]
 position = Vector2( 103, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2526,6 +2533,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger5" type="RigidBody2D" parent="."]
 position = Vector2( 526, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2541,6 +2549,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger6" type="RigidBody2D" parent="."]
 position = Vector2( 611, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2556,6 +2565,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger7" type="RigidBody2D" parent="."]
 position = Vector2( 695, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2571,6 +2581,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger8" type="RigidBody2D" parent="."]
 position = Vector2( 780, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2586,6 +2597,7 @@ shape = SubResource( 2 )
 
 [node name="Passenger9" type="RigidBody2D" parent="."]
 position = Vector2( 864, 276 )
+z_index = 1
 can_sleep = false
 __meta__ = {
 "_edit_group_": true
@@ -2607,3 +2619,8 @@ autoplay = true
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 autoplay = true
+
+[node name="ProceduralContentLol" type="Timer" parent="."]
+wait_time = 12.0
+autostart = true
+script = ExtResource( 13 )

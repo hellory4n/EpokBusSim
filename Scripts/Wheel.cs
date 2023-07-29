@@ -16,7 +16,7 @@ public class Wheel : CollisionShape2D {
 
     public void Suffering() {
         CircleShape2D pain = new CircleShape2D();
-        pain.Radius = random.Next(-50,50);
+        pain.Radius = random.Next(-35,35);
         Shape = pain;
     }
 }
