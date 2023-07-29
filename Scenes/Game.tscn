@@ -2324,7 +2324,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 395.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Bus"]
@@ -2338,7 +2337,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 310.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="Bus"]
@@ -2352,7 +2350,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 231.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="Bus"]
@@ -2366,7 +2363,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D18" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 141.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D19" type="CollisionShape2D" parent="Bus"]
@@ -2380,7 +2376,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 57.5556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="Bus"]
@@ -2394,7 +2389,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D24" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 479.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D25" type="CollisionShape2D" parent="Bus"]
@@ -2408,7 +2402,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D27" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 564.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D28" type="CollisionShape2D" parent="Bus"]
@@ -2422,7 +2415,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D30" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 649.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D31" type="CollisionShape2D" parent="Bus"]
@@ -2436,7 +2428,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D33" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 733.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D34" type="CollisionShape2D" parent="Bus"]
@@ -2450,7 +2441,6 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D36" type="CollisionShape2D" parent="Bus"]
 position = Vector2( 818.556, 74.3415 )
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="Player" type="RigidBody2D" parent="."]
