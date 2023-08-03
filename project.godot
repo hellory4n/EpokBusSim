@@ -13,7 +13,9 @@ config_version=4
 config/name="EpokBusSim"
 config/description="A bus simulator where you're the passenger"
 run/main_scene="res://Scenes/Menu.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://Assets/Splash.png"
+config/icon="res://Assets/EpicCoolIcon.png"
+config/windows_native_icon="res://Assets/EpicCoolIcon.ico"
 
 [display]
 
@@ -25,6 +27,14 @@ window/stretch/aspect="keep"
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+fullscreen={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777254,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [mono]
 
