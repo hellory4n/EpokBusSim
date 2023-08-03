@@ -52,6 +52,10 @@ region_rect = Rect2( 0, 0, 400, 75 )
 
 [node name="Destination" type="Node2D"]
 
+[node name="StupidThingSoYouCantClickOnButtonsYouCantSee" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+
 [node name="Yes" type="Sprite" parent="."]
 texture = ExtResource( 23 )
 centered = false
