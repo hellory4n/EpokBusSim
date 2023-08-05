@@ -6,12 +6,25 @@ public class ProceduralContentLol : Timer {
     Vector2 TreePosition = new Vector2(15173, 247);
     PackedScene Ground;
     Texture Trees;
+    bool cheatingMode = false;
 
     public override void _Ready() {
         base._Ready();
-        this.Connect("timeout", this, nameof(ContentCreator));
+        Connect("timeout", this, nameof(ContentCreator));
         Ground = ResourceLoader.Load<PackedScene>("res://Scenes/GroundOmgomgomgogm.tscn");
         Trees = ResourceLoader.Load<Texture>("res://Assets/Forest.png");
+    }
+
+    public override void _Process(float delta) {
+        if (Input.IsActionJustReleased("cheating_mode™"))
+            cheatingMode = !cheatingMode;
+
+        if (cheatingMode)
+            WaitTime = 0.0024f;
+        else
+            WaitTime = 12;
+
+        base._Process(delta);
     }
 
     public void ContentCreator() {
@@ -25,10 +38,11 @@ public class ProceduralContentLol : Timer {
 
         // more trees :))))
         for (int i = 0; i < 2; i++) {
-            Sprite stupid = new Sprite();
-            stupid.Texture = Trees;
-            stupid.Centered = false;
-            stupid.Position = TreePosition;
+            Sprite stupid = new Sprite {
+                Texture = Trees,
+                Centered = false,
+                Position = TreePosition
+            };
             GetParent().AddChild(stupid);
             TreePosition = new Vector2(TreePosition.x+9560, 247);
         }
