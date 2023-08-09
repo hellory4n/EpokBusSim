@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shitending.mp3-f794029b7b11f084c6c36c99d0a9d17b.mp3str"
+
+[deps]
+
+source_file="res://Assets/shitending.mp3"
+dest_files=[ "res://.import/shitending.mp3-f794029b7b11f084c6c36c99d0a9d17b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
